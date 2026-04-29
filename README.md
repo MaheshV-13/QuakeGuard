@@ -49,7 +49,8 @@ QuakeGuard resolves these issues by utilizing a non-blocking 9-state finite stat
 
 **Non-Blocking FSM Architecture:** Operates on a 9-state finite state machine, progressing seamlessly from `STANDBY` to `EMERGENCY_ACTIVE` and `SYSTEM_RESETTING`. All core timing utilizes `millis()` comparisons to guarantee the microcontroller never freezes during multi-step actuator sequences, ensuring the system remains responsive to aftershocks.
 
-**Graduated Automated Response:** - **Minor Quake:** Logs an informational alert with a Yellow LED and single beep.
+**Graduated Automated Response:** 
+- **Minor Quake:** Logs an informational alert with a Yellow LED and single beep.
 - **Moderate Quake:** Issues a 10-second countdown warning via the LCD and an Orange LED.
 - **Major Quake:** Activates a continuous siren (2000 Hz) and triggers critical safety procedures.
 
