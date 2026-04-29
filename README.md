@@ -25,8 +25,8 @@ Earthquakes cause massive structural damage and dangerous secondary hazards, suc
 ### ✅ The Solution: Proportional & Automated Response
 QuakeGuard resolves these issues by utilizing a non-blocking 9-state finite state machine (FSM), interrupt-driven zero-latency detection, and dynamic threshold adjustments. By analyzing vibration frequency over a 5-second window, the system distinguishes minor tremors from dangerous earthquakes and autonomously executes emergency protocols to ensure safe evacuation.
 
-![QuakeGuard Circuit View](assets/circuit-view.png)
-![QuakeGuard Schematic View](assets/schematic-view.png)
+![QuakeGuard Circuit View](earthquake-warning-system/assets/circuit-view.png)
+![QuakeGuard Schematic View](earthquake-warning-system/assets/schematic-view.png)
 
 ---
 
@@ -53,7 +53,7 @@ QuakeGuard resolves these issues by utilizing a non-blocking 9-state finite stat
 - **Moderate Quake:** Issues a 10-second countdown warning via the LCD and an Orange LED.
 - **Major Quake:** Activates a continuous siren (2000 Hz) and triggers critical safety procedures.
 
-![QuakeGuard FSM Diagram](assets/fsm-diagram.png)
+![QuakeGuard FSM Diagram](earthquake-warning-system/assets/fsm-diagram.png)
 
 **Emergency Safety Protocols:** At t=0ms, the gas valve servo closes to 90°. Following this, at t=300ms, the emergency door lock servo opens to 180° to facilitate immediate building evacuation. 
 
@@ -103,8 +103,7 @@ earthquake-warning-system/
 ├── report/                  # Documentation
 │   ├── Embedded System Project Report.pdf
 │   ├── Project Guidelines.pdf
-│   ├── QuakeGuard_FSMDiagram.pdf
-│   └── QuakeGuard_Presentation.pptx
+│   └──QuakeGuard_FSMDiagram.pdf
 ├── src/                     # Source code directory
 │   └── main.ino             # Main C++ Arduino logic (9-State FSM)
 └── README.md                # Project documentation
