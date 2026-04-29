@@ -104,7 +104,7 @@ earthquake-warning-system/
 ├── report/                  # Documentation
 │   ├── Embedded System Project Report.pdf
 │   ├── Project Guidelines.pdf
-│   └──QuakeGuard_FSMDiagram.pdf
+│   └── QuakeGuard_FSMDiagram.pdf
 ├── src/                     # Source code directory
 │   └── main.ino             # Main C++ Arduino logic (9-State FSM)
 └── README.md                # Project documentation
